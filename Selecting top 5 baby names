@@ -1,9 +1,9 @@
 import pandas as pd
 #import csv file for list of baby names in US
 us_babies = pd.read_csv("Desktop/python/us_baby_names.csv")
-#Select baby names from 2014
-us_babies_2014 = us_babies.loc[us_babies['Year'] == 2014, :]
+#Select baby names from 1989
+us_babies_1989 = us_babies.loc[us_babies['Year'] == 1989, :]
 #Arrange names used from most common to least common
-sorted_us_2014 = us_babies_2014.sort_values('Count', ascending = False)
+sorted_us_1989 = us_babies_1989.sort_values('Count', ascending = False)
 #Select top 5 common names
 sorted_us_2014.iloc[0:5]
